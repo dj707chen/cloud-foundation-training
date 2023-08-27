@@ -14,5 +14,5 @@
  * limitations under the License.
  */
 
-project_id = "" # Insert Project ID here
-region     = "" # Insert Region here
+project_id = "elite-hangar-395804" # Insert Project ID here
+region     = "us-central1" # Insert Region here

@@ -23,7 +23,6 @@
  * Reference - https://www.terraform.io/docs/providers/google/index.html
  *
  */
-/**
 provider "google" {
   project = var.project_id
   region  = var.region
@@ -35,7 +34,6 @@ terraform {
     }
   }
 }
-*/
 
 /**
  * Task 4.1: Add random_id resource ("suffix")
@@ -44,11 +42,9 @@ terraform {
  * Reference - https://www.terraform.io/docs/providers/random/r/id.html
  *
  */
-/**
 resource "random_id" "suffix" {
   byte_length = 4
 }
-*/
 
 /**
  * Task 4.2: Add GCS bucket resource for remote state ("remote_state")
@@ -61,13 +57,11 @@ resource "random_id" "suffix" {
  * Reference - https://www.terraform.io/docs/providers/google/r/storage_bucket.html
  *
  */
-/**
 resource "google_storage_bucket" "remote_state" {
-  name          = "cft-lab-state-<YOUR_NAME>-${random_id.suffix.hex}" # Note the reference to the random_id block
+  name          = "cft-lab-state-djchen-${random_id.suffix.hex}" # Note the reference to the random_id block
   location      = "US"
   force_destroy = true
   versioning {
     enabled = true
   }
 }
-*/

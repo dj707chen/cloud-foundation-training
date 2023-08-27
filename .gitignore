@@ -54,3 +54,25 @@ credentials.json
 
 # File to populate env vars used by Docker test runs
 .envrc
+
+# Mine
+*.tmp
+*.tmpIgnore.*
+
+.DS_Store
+.bsp/
+/project/boot
+target/
+lib_managed/
+src_managed/
+.idea/
+.idea_modules/
+.bloop/
+.metals/
+metals.sbt
+project/.bloop/
+project/metals.sbt
+**/project/project/
+project/target
+*elite-hangar-395804.iam.gserviceaccount.com.json
+*/.terraform.lock.hcl
